@@ -75,6 +75,9 @@ cd smart-factory-simulation
 
 Alternatively, open `factory.ui.FactoryUI` in your IDE and run the `main` method.
 
+example of the UI i built ( i just spent less than 30 minutes to make this so I know it's not that big deal but here it is:
+![image](https://github.com/user-attachments/assets/9dc2b6a7-e0f0-4e51-8dd2-e2bca543ddd7)
+
 ---
 
 ## 📄 Test Coverage
