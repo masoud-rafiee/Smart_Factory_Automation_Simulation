@@ -1,0 +1,36 @@
+plugins {
+    // apply the Java plugin so i get compile, test & run tasks
+    id 'java'
+    // optional: if we want to run via `gradle run`
+    id 'application'
+}
+
+application {
+    // fully-qualified name of the UI entry point
+    mainClass = 'factory.ui.FactoryUI'
+}
+
+
+group = 'com.masoud.factory'
+version = '1.0-SNAPSHOT'
+
+// where to fetch dependencies
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // JUnit 5 for my tests
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+}
+
+test {
+    // tells Gradle to use JUnit 5’s engine
+    useJUnitPlatform()
+}
+
+// only needed if my apply the application plugin
+application {
+    // point this at my Main class’s fully qualified name
+    mainClass = 'factory.Main'
+}
